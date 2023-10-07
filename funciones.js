@@ -16,13 +16,19 @@ const mostrarLista = (db, parentNode) => {
 const crearContacto = (parentNode, contacto, db) => {
     let divContacto = document.createElement('div')
     let nombreContacto = document.createElement('h3')
-    let apellidoContacto = document.createElement('p')
+    let apellidoContacto = document.createElement('h3')
+    let identidadContacto = document.createElement('h3')
     let numeroContacto = document.createElement('p')
+    let ciudadContacto = document.createElement('p')
+    let direccionContacto = document.createElement('p')
     let iconoBorrar = document.createElement('span')
 
     nombreContacto.innerHTML = contacto.nombre
     apellidoContacto.innerHTML = contacto.apellido
+    identidadContacto.innerHTML = contacto.identidad
     numeroContacto.innerHTML = contacto.numero
+    ciudadContacto.innerHTML = contacto.ciudad
+    direccionContacto.innerHTML = contacto.direccion
     iconoBorrar.innerHTML = ' delete_forever'
 
     divContacto.classList.add('Tarea')
@@ -37,7 +43,10 @@ const crearContacto = (parentNode, contacto, db) => {
 
     divContacto.appendChild(nombreContacto)
     divContacto.appendChild(apellidoContacto)
+    divContacto.appendChild(identidadContacto)
     divContacto.appendChild(numeroContacto)
+    divContacto.appendChild(ciudadContacto)
+    divContacto.appendChild(direccionContacto)
     divContacto.appendChild(iconoBorrar)
 
     parentNode.appendChild(divContacto)

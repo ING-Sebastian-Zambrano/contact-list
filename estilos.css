@@ -70,22 +70,26 @@ body{
     height: 3rem;
     
     
-    }
-    .Listado-Tareas{
-display: flex;
-flex-direction: column;
+}
+.Listado-Tareas{
+    box-sizing: border-box;
+    border: none;
+    background-color: #EEEEBB;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
 
-    }
+}
 
-    .Tarea{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        height: 4rem;
-    }
-    .icono{
+.Tarea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 4rem;
+}
+.icono{
     color: tomato;
     cursor: pointer;
 
-    }
+}
 
